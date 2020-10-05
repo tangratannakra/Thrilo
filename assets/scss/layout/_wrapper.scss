@@ -1,5 +1,6 @@
 .wrapper {
-    height: 90%;
-    max-width: 90%;
-    background-color: wheat;
+    min-height: 20rem;
+    max-width: 120rem;
+    background-color: var(--color-grey-light-2);
+    box-shadow: var(--drop-shadow-dark);
 }
