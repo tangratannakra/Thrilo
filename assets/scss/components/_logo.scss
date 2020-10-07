@@ -1,0 +1,15 @@
+.logo{
+
+    a {
+        display: inline-block;
+    }
+
+    svg {
+        height: 4rem;
+        width: 220px;
+    }
+
+    svg:hover{
+        color: red;
+    }
+}

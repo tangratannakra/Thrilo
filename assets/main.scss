@@ -5,4 +5,9 @@
 @import "./scss/layout/header";
 @import './scss/layout/container';
 @import './scss/layout/nav';
-@import './scss/layout/main';
+@import './scss/layout/main-container';
+
+//components
+@import './scss/components/logo';
+@import './scss/components/search-form';
+@import './scss/components/user-nav';

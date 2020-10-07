@@ -1,0 +1,35 @@
+.search {
+    flex: 0 0 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__input {
+        border-radius: 2rem;
+        width: 90%;
+        height: 2.5rem;
+        padding: 1rem 1.5rem;
+        background-color: var(--color-grey-light-2);
+        font-family: inherit;
+        font-size: inherit;
+        border:1px solid transparent;
+        outline: 1px solid transparent;
+
+        &:hover, &:focus {
+            border: 1px solid var(--color-grey-light-4);
+            width: 100%;
+        }
+    }
+
+    &__button {
+        width: 2rem;
+        margin-left:-2.7rem;
+        border:none;
+        background-color: none;
+        right: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

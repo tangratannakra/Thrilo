@@ -48,6 +48,11 @@ body {
   width: 100%;
 }
 
+svg {
+  height: 2rem;
+  width: 32px;
+}
+
 .wrapper {
   min-height: 20rem;
   max-width: 120rem;
@@ -57,9 +62,22 @@ body {
 }
 
 .header-container {
-  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5rem;
   background-color: white;
   border-bottom: var(--color-grey-light-2);
+}
+
+.header-container > * {
+  background-color: wheat;
 }
 
 .container {
@@ -81,5 +99,73 @@ body {
           flex: 1;
   background-color: red;
   height: 100%;
+}
+
+.logo a {
+  display: inline-block;
+}
+
+.logo svg {
+  height: 4rem;
+  width: 220px;
+}
+
+.logo svg:hover {
+  color: red;
+}
+
+.search {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.search__input {
+  border-radius: 2rem;
+  width: 90%;
+  height: 2.5rem;
+  padding: 1rem 1.5rem;
+  background-color: var(--color-grey-light-2);
+  font-family: inherit;
+  font-size: inherit;
+  border: 1px solid transparent;
+  outline: 1px solid transparent;
+}
+
+.search__input:hover, .search__input:focus {
+  border: 1px solid var(--color-grey-light-4);
+  width: 100%;
+}
+
+.search__button {
+  width: 2rem;
+  margin-left: -2.7rem;
+  border: none;
+  background-color: none;
+  right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.user-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=main.css.map */
