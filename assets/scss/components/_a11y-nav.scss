@@ -1,33 +1,37 @@
 
-#skip {
+.skip-content {
     position: fixed;
-    display: flex;
-    align-items: center;
     top:0px;
     left:-200vw;
     width:1px;
     height:1px;
-    width: 100%;                
-    transition: all 0.3s ease;
 
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color:white;
+    transition: all 0.3s ease;
+    
     &:focus, &:focus-within {
         width: 100vw;
         left:0;
         height: auto;
     }
 
+    nav {
+        outline: none;
+        border: none;
+    }
+
     ul {
         display: flex;
         top:auto;
-        width: 100vw;
         padding: 0.5rem 0;
-        background-color: black;
-        color:white;
+        
         list-style: none;
 
         &:focus, &:focus-within {
             left: 0px;
-            width: 100vw;
             height:auto;
         }
 
@@ -51,6 +55,4 @@
             color: black;   
         }
     }
-
-    
 }

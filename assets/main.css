@@ -244,52 +244,54 @@ svg {
   width: 20px;
 }
 
-#skip {
+.skip-content {
   position: fixed;
+  top: 0px;
+  left: -200vw;
+  width: 1px;
+  height: 1px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  top: 0px;
-  left: -200vw;
-  width: 1px;
-  height: 1px;
-  width: 100%;
+  background-color: black;
+  color: white;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-#skip:focus, #skip:focus-within {
+.skip-content:focus, .skip-content:focus-within {
   width: 100vw;
   left: 0;
   height: auto;
 }
 
-#skip ul {
+.skip-content nav {
+  outline: none;
+  border: none;
+}
+
+.skip-content ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   top: auto;
-  width: 100vw;
   padding: 0.5rem 0;
-  background-color: black;
-  color: white;
   list-style: none;
 }
 
-#skip ul:focus, #skip ul:focus-within {
+.skip-content ul:focus, .skip-content ul:focus-within {
   left: 0px;
-  width: 100vw;
   height: auto;
 }
 
-#skip ul li {
+.skip-content ul li {
   padding: 0.7rem;
 }
 
-#skip a {
+.skip-content a {
   display: inline-block;
   padding: 0.2rem 0.5rem;
   color: white;
@@ -297,7 +299,7 @@ svg {
   border-bottom: 2px solid white;
 }
 
-#skip a:focus, #skip a:hover {
+.skip-content a:focus, .skip-content a:hover {
   width: auto;
   height: auto;
   background-color: white;
