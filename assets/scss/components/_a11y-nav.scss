@@ -1,0 +1,56 @@
+
+#skip {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top:0px;
+    left:-200vw;
+    width:1px;
+    height:1px;
+    width: 100%;                
+    transition: all 0.3s ease;
+
+    &:focus, &:focus-within {
+        width: 100vw;
+        left:0;
+        height: auto;
+    }
+
+    ul {
+        display: flex;
+        top:auto;
+        width: 100vw;
+        padding: 0.5rem 0;
+        background-color: black;
+        color:white;
+        list-style: none;
+
+        &:focus, &:focus-within {
+            left: 0px;
+            width: 100vw;
+            height:auto;
+        }
+
+        li {
+            padding: 0.7rem;
+        }
+    }
+
+    a {
+        display: inline-block;
+        padding: 0.2rem 0.5rem;
+        color:white;
+        text-decoration: none;
+        border-bottom: 2px solid white;
+       
+
+        &:focus, &:hover {
+            width:auto;
+            height:auto;
+            background-color: white;
+            color: black;   
+        }
+    }
+
+    
+}

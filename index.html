@@ -6,18 +6,32 @@
     <link rel="stylesheet" href="https//fonts.google.com/css?family=Open+Sans:300,400,600">
     <link rel="stylesheet" href="./assets/main.css">
     <title>Thrilo</title>
+</head>
+<body>
+    <div id="skip">
+        <nav class="a11y-nav" aria-hidden="false" aria-label="accessibility skip content navigation">
+            <ul class="a11y-list" tabindex="0">
+                <li class="a11y-nav__page-description"> This is Homepage of BRAND</li>
+                <li><a href="#content">Go to main navigation</a></li>
+                <li><a href="#content">Skip to Main Content</a></li>
+                <li><a href="#content">Skip to Booking</a></li>
+            </ul>
+        </nav>
+    </div>
     <div class="wrapper">
         <header class="header-container">
             <div class="logo">
-                <a href="#" class="logo__link">
+                <a href="#" class="logo__link" aria-label="link to homepage">
                     <svg class="logo__img">
                         <use xlink:href="./assets/img/sprite.svg#icon-aircraft-take-off"></use>
                     </svg>
+                    <span class="logo__typo">TRaveler</span>
                 </a>
             </div>
             <form action="#" class="search">
-                <input class="search__input" type="search" placeholder="search hotels">
-                <button type="button" class="search__button">
+                <input id="search-hotel" class="search__input" type="search" placeholder="search hotels">
+                <label for="search-hotel" class="u-sr-only">Search the page for hotels</label>
+                <button type="submit" class="search__button" aria-label="submit the search">
                     <svg class="search__icon">
                         <use xlink:href="./assets/img/sprite.svg#icon-magnifying-glass"></use>
                     </svg>
@@ -49,9 +63,5 @@
             <main class="main-container">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi voluptate culpa laborum omnis doloremque cumque voluptatem blanditiis id officiis eaque!</main>
         </div>
     </div>
-
-</head>
-<body>
-    
 </body>
 </html>

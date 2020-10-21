@@ -1,5 +1,19 @@
 .user-nav {
     display: flex;
+    align-items: center;
+    align-self: stretch;
 
-    
-}
+    & > * {
+        padding: 0 2rem;
+        cursor: pointer;
+        height: 100%;
+    }
+
+    & > *:hover {
+        background-color: var(--color-grey) ;
+    }
+
+    svg {
+        width:20px;
+    }
+} 

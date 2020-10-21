@@ -1,3 +1,12 @@
+.u-sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 :root {
   --color-primary: #eb2f64;
   --color-primary-light: #ff3366;
@@ -74,10 +83,7 @@ svg {
   height: 5rem;
   background-color: white;
   border-bottom: var(--color-grey-light-2);
-}
-
-.header-container > * {
-  background-color: wheat;
+  font-size: 1rem;
 }
 
 .container {
@@ -101,6 +107,10 @@ svg {
   height: 100%;
 }
 
+.logo {
+  position: relative;
+}
+
 .logo a {
   display: inline-block;
 }
@@ -112,6 +122,14 @@ svg {
 
 .logo svg:hover {
   color: red;
+}
+
+.logo__typo {
+  position: absolute;
+  right: 0px;
+  bottom: 15px;
+  font-weight: 800;
+  font-size: 2rem;
 }
 
 .search {
@@ -139,11 +157,45 @@ svg {
   font-size: inherit;
   border: 1px solid transparent;
   outline: 1px solid transparent;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .search__input:hover, .search__input:focus {
   border: 1px solid var(--color-grey-light-4);
   width: 100%;
+}
+
+.search__input::-webkit-input-placeholder {
+  color: var(--color-grey-light-4);
+}
+
+.search__input:-ms-input-placeholder {
+  color: var(--color-grey-light-4);
+}
+
+.search__input::-ms-input-placeholder {
+  color: var(--color-grey-light-4);
+}
+
+.search__input::placeholder {
+  color: var(--color-grey-light-4);
+}
+
+.search__input::-webkit-input-placeholder:active {
+  color: var(--color-grey-dark-3);
+}
+
+.search__input:-ms-input-placeholder:active {
+  color: var(--color-grey-dark-3);
+}
+
+.search__input::-ms-input-placeholder:active {
+  color: var(--color-grey-dark-3);
+}
+
+.search__input::placeholder:active {
+  color: var(--color-grey-dark-3);
 }
 
 .search__button {
@@ -163,9 +215,92 @@ svg {
           align-items: center;
 }
 
+.search__icon {
+  fill: var(--color-grey-dark-2);
+}
+
 .user-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+}
+
+.user-nav > * {
+  padding: 0 2rem;
+  cursor: pointer;
+  height: 100%;
+}
+
+.user-nav > *:hover {
+  background-color: var(--color-grey);
+}
+
+.user-nav svg {
+  width: 20px;
+}
+
+#skip {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0px;
+  left: -200vw;
+  width: 1px;
+  height: 1px;
+  width: 100%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#skip:focus, #skip:focus-within {
+  width: 100vw;
+  left: 0;
+  height: auto;
+}
+
+#skip ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: auto;
+  width: 100vw;
+  padding: 0.5rem 0;
+  background-color: black;
+  color: white;
+  list-style: none;
+}
+
+#skip ul:focus, #skip ul:focus-within {
+  left: 0px;
+  width: 100vw;
+  height: auto;
+}
+
+#skip ul li {
+  padding: 0.7rem;
+}
+
+#skip a {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid white;
+}
+
+#skip a:focus, #skip a:hover {
+  width: auto;
+  height: auto;
+  background-color: white;
+  color: black;
 }
 /*# sourceMappingURL=main.css.map */
