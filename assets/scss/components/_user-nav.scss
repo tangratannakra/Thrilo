@@ -4,16 +4,46 @@
     align-self: stretch;
 
     & > * {
+        display: flex;
+        align-items: center;
         padding: 0 2rem;
         cursor: pointer;
         height: 100%;
+
+        &:hover {
+            background-color: var(--color-grey-light-2) ;
+        }
+
     }
 
-    & > *:hover {
-        background-color: var(--color-grey) ;
-    }
 
     svg {
         width:20px;
+    }
+    &__icon-box {
+        position: relative;
+    }
+
+    &__icon {
+        fill: var(--color-grey-dark-2);
+        height: 2rem;
+        width: 2rem;
+        
+    }
+
+    &__notification {
+        font-size: 0.6rem;
+        color: white;
+        background-color: var(--color-primary);
+        border-radius: 50%;
+        width:1.2rem;
+        height: 1.2rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top:45%;
+        right:25%;
     }
 } 
