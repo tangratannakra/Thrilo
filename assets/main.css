@@ -371,10 +371,11 @@ svg {
   position: absolute;
   top: 0;
   left: 0;
+  width: 3px;
   height: 100%;
   -webkit-transform: scaleY(0);
           transform: scaleY(0);
-  width: 3px;
+  background-color: var(--color-primary);
   -webkit-transition: width 0.5s cubic-bezier(1, 0, 0, 1) 0.2s, -webkit-transform 0.2s;
   transition: width 0.5s cubic-bezier(1, 0, 0, 1) 0.2s, -webkit-transform 0.2s;
   transition: transform 0.2s, width 0.5s cubic-bezier(1, 0, 0, 1) 0.2s;
@@ -382,11 +383,24 @@ svg {
 }
 
 .side-nav__item:hover:before {
-  background-color: red;
   width: 100%;
-  background-color: var(--color-primary);
   -webkit-transform: scaleY(1);
           transform: scaleY(1);
+}
+
+.side-nav__item:active::before {
+  background-color: black;
+}
+
+.side-nav__item--current:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background-color: var(--color-primary);
+  width: 100%;
 }
 
 .side-nav__link {
@@ -400,6 +414,8 @@ svg {
   font-size: 0.8rem;
   text-decoration: none;
   text-transform: uppercase;
+  position: relative;
+  z-index: 10;
 }
 
 .side-nav__link:link, .side-nav__link:visited {
