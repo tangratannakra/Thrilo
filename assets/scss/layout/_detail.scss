@@ -1,0 +1,22 @@
+.detail {
+    width: 100%;
+    display: flex;
+    padding: 2rem;
+    background-color: var(--color-grey-light-3);
+    border-bottom: var(--line);
+}
+
+.description{
+    background-color: white;
+    box-shadow: var(--shadow-details);
+    font-size: 1rem;
+    padding: 2rem;
+    align-self: stretch;
+    flex: 0 0 60%;
+    margin-right: 2rem;
+}
+
+.user-reviews{
+    background-color: purple;
+    flex:1;
+}
