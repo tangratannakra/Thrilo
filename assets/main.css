@@ -152,49 +152,6 @@ svg {
   margin-bottom: 1.5rem;
 }
 
-.list {
-  list-style: none;
-  margin: 2rem 0;
-  padding: 2rem 0;
-  border-top: var(--line);
-  border-bottom: var(--line);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.list__item {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
-  margin-bottom: 0.2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.list__item::before {
-  content: "";
-  background: url(../assets/img/SVG/chevron-thin-right.svg) center no-repeat;
-  background-size: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 10px;
-  height: 10px;
-  margin-right: 0.5rem;
-  background-color: var(--color-primary);
-  -webkit-mask-image: url(../assets/img/SVG/chevron-thin-right.svg);
-  -webkit-mask-size: cover;
-  mask-image: url(../assets/img/SVG/chevron-thin-right.svg);
-  mask-size: cover;
-}
-
 .logo {
   position: relative;
 }
@@ -678,5 +635,48 @@ svg {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
+}
+
+.list {
+  list-style: none;
+  margin: 2rem 0;
+  padding: 2rem 0;
+  border-top: var(--line);
+  border-bottom: var(--line);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.list__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  margin-bottom: 0.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.list__item::before {
+  content: "";
+  background: url(../assets/img/SVG/chevron-thin-right.svg) center no-repeat;
+  background-size: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 10px;
+  height: 10px;
+  margin-right: 0.5rem;
+  background-color: var(--color-primary);
+  -webkit-mask-image: url(../assets/img/SVG/chevron-thin-right.svg);
+  -webkit-mask-size: cover;
+  mask-image: url(../assets/img/SVG/chevron-thin-right.svg);
+  mask-size: cover;
 }
 /*# sourceMappingURL=main.css.map */
