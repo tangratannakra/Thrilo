@@ -1,0 +1,15 @@
+.overview {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+
+    &__title {}
+
+    &__stars{}
+
+    &__icon-stars {}
+
+    &__icon-location {}
+
+    &__rating {align-self: flex-end;}
+}
