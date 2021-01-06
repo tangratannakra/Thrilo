@@ -679,4 +679,53 @@ svg {
   mask-image: url(../assets/img/SVG/chevron-thin-right.svg);
   mask-size: cover;
 }
+
+.recommend {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.recommend__count {
+  font-size: 0.8rem;
+  color: var(--color-grey-dark-2);
+}
+
+.recommend__friends {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.recommend__photo {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 3px solid white;
+  -webkit-box-shadow: var(--shadow-details);
+          box-shadow: var(--shadow-details);
+  margin-right: -1rem;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.recommend__photo:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  margin-right: 0.2rem;
+  -webkit-box-shadow: var(--drop-shadow-dark);
+          box-shadow: var(--drop-shadow-dark);
+}
 /*# sourceMappingURL=main.css.map */

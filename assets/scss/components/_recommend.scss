@@ -1,0 +1,36 @@
+.recommend {
+    display: flex;
+    align-items: center;
+
+    &__count {
+        font-size: 0.8rem;
+        color: var(--color-grey-dark-2);
+    }
+
+    &__friends {
+        flex: 0 0 30%;
+        margin-left: auto;
+        display: flex;
+    }
+
+    &__photo {
+        box-sizing: content-box;
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        overflow: hidden;
+        border-radius: 50%;
+        border: 3px solid white;
+
+        box-shadow: var(--shadow-details);
+        margin-right: -1rem;
+
+        transition: all 0.2s ease;
+
+        &:hover {
+            transform: scale(1.2);
+            margin-right: 0.2rem;
+            box-shadow: var(--drop-shadow-dark);
+        }
+    }
+}
