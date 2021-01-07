@@ -569,6 +569,7 @@ svg {
   border: none;
   color: var(--color-primary);
   font-size: inherit;
+  line-height: 1rem;
   border-bottom: 1px solid currentColor;
   padding-bottom: 2px;
   display: inline-block;
@@ -644,10 +645,10 @@ svg {
 }
 
 .list__item {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
+  max-width: 50%;
+  min-width: 45%;
   margin-bottom: 0.2rem;
+  margin-left: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
