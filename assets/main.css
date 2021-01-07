@@ -141,13 +141,6 @@ svg {
   margin-right: 2rem;
 }
 
-.user-reviews {
-  background-color: purple;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
 .paragraph:not(:last-of-type) {
   margin-bottom: 1.5rem;
 }
@@ -727,5 +720,11 @@ svg {
   margin-right: 0.2rem;
   -webkit-box-shadow: var(--drop-shadow-dark);
           box-shadow: var(--drop-shadow-dark);
+}
+
+.user-reviews {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 /*# sourceMappingURL=main.css.map */
