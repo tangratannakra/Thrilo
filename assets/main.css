@@ -726,5 +726,76 @@ svg {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  font-size: 0.8rem;
+}
+
+.review {
+  background-color: white;
+  padding: 2rem;
+  -webkit-box-shadow: var(--shadow-details);
+          box-shadow: var(--shadow-details);
+  position: relative;
+}
+
+.review::before {
+  content: "\201C";
+  position: absolute;
+  left: 0;
+  top: -1.5rem;
+  line-height: 1;
+  font-size: 18rem;
+  color: var(--color-grey-light-2);
+  font-family: sans-serif;
+  z-index: 1;
+}
+
+.review:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.review__text {
+  margin-bottom: 1rem;
+  z-index: 10;
+  position: relative;
+}
+
+.review__user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.review__user > *:not(:last-child) {
+  margin-right: 0.7rem;
+}
+
+.review__photo {
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 50%;
+  border: 3px solid white;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.review__user-box {
+  font-size: inherit;
+}
+
+.review__user-name {
+  text-transform: uppercase;
+}
+
+.review__user-date {
+  color: var(--color-grey-dark-3);
+}
+
+.review__ratio {
+  margin-left: auto;
+  font-size: 1.3rem;
+  color: var(--color-primary);
 }
 /*# sourceMappingURL=main.css.map */

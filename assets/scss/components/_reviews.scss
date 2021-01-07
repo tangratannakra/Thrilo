@@ -1,15 +1,69 @@
 .user-reviews{
     flex:1;
+    font-size: 0.8rem;
+    
 }
 
 .review {
-    
-    &__text {}
+    background-color: white;
+    padding: 2rem;
+    box-shadow: var(--shadow-details);
+    position: relative;
 
-    &__user {}
-    &__photo {}
-    &__user-box {}
-    &__user-name {}
-    &__user-date {}
-    &__ration {}
+    &::before {
+        content: "\201C";
+        position: absolute;
+        left:0;
+        top:-1.5rem;
+        line-height: 1;
+        font-size: 18rem;
+        color: var(--color-grey-light-2);
+        font-family: sans-serif;
+        z-index: 1;
+    }
+
+    &:not(:last-child){
+        margin-bottom: 2rem;
+    }
+
+    &__text {
+        margin-bottom: 1rem;
+        z-index: 10;
+        position: relative;
+    }
+
+    &__user {
+        display: flex;
+        align-items: center;
+        
+        & > *:not(:last-child){
+            margin-right: 0.7rem;
+        }
+    }
+
+    &__photo {
+        height: 4.5rem;
+        width: 4.5rem;
+        border-radius: 50%;
+        border:3px solid white;
+        object-fit: cover;
+    }
+
+    &__user-box {
+        // display: flex;
+        font-size: inherit;
+    }
+
+    &__user-name {
+        text-transform: uppercase;
+    }
+    &__user-date {
+        color: var(--color-grey-dark-3);
+    }
+
+    &__ratio {
+        margin-left: auto;
+        font-size: 1.3rem;
+        color: var(--color-primary)
+    }
 }
