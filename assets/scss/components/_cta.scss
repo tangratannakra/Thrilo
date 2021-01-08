@@ -28,9 +28,10 @@
             transition: all 0.3s ease;
         }
 
+        &:hover, &:focus {
+            outline: none;
+            animation: 1s pulsar infinite;
 
-
-        &:hover {
             .cta__visible {
                 transform: translateY(100%);
                 // visibility: hidden;
@@ -40,6 +41,7 @@
                 top:0;
             }
         }
+
     }
 
     &__hidden {

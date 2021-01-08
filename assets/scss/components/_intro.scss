@@ -7,11 +7,59 @@
     align-items: center;
    
     &__logo { 
-        margin-top:20vh;
+        margin-top:30vh;
+        outline: 1px solid var(--color-primary);
+        outline-offset: 2.5rem;
+        background-color: var(--color-grey-light-3);
+        padding: 1.5rem;
+
+        &-link {
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 4rem;
+            line-height: 4rem;
+            position: relative;
+        }
+        
+
+        &-img {
+            width:13rem;
+            height: 13rem;
+            fill: var(--color-primary-light);
+            position: absolute;
+            top:-5.5rem;
+            left:-4rem;
+            z-index: 0;
+
+        }
+
+        &-typo {
+            z-index: 10;
+            position: relative;
+
+            background-image: -webkit-gradient(linear, left top, right top, from(#8cd56f), to(#28b485));
+            background-image: linear-gradient(45deg, #000000 50%, var(--color-primary));
+            display: inline-block;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+
+        }
     }
-    &__slogan {}
-    &__button {margin-top: auto;
-    margin-bottom: 25vh;}
+
+
+    &__slogan {
+        font-size: 0.8rem;
+        padding: 0.5rem 0;
+        text-transform: uppercase;
+
+
+    }
+    &__button {
+        margin-top: auto;
+        margin-bottom: 25vh;
+    }
 
     .cta {
         margin-top: auto;

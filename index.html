@@ -26,10 +26,17 @@
     
     <div class="wrapper" >
         <div class="intro">
-            <div class="intro__logo">Traveler</div>
+            <div class="intro__logo">
+                <a href="#" class="intro__logo-link" aria-label="link to homepage">
+                    <svg class="intro__logo-img">
+                        <use xlink:href="./assets/img/sprite.svg#icon-aircraft-take-off"></use>
+                    </svg>
+                    <span class="intro__logo-typo">TRaveler</span>
+                </a>
+            </div>
             <div class="intro__slogan">"A man is a man when he is on the road"</div>
             <div class="cta intro__button">
-                <button class="cta__button">
+                <button id="cta" class="cta__button">
                     <span class="cta__hidden">Book Now</span>
                     <span class="cta__visible">Take the leap</span>
                 </button>
@@ -219,5 +226,6 @@
             </main>
         </div>
     </div>
+    <script src="./assets/script.js"></script>
 </body>
 </html>
