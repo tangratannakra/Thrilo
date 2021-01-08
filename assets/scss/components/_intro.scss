@@ -7,24 +7,10 @@
     align-items: center;
    
     &__logo { 
-        margin-top:30vh;
-        outline: 2px solid white;
-        outline-offset: 2.5rem;
+        margin-top:25vh;
         background-color: var(--color-grey-light-3);
         padding: 1.5rem;
         position: relative;
-
-        // &:before {
-        //     content:"\00b0"; 
-        //     width: 20px;
-        //     height: 20px;
-        //     position: absolute;
-        //     top:-2rem;
-        //     left: -2rem;
-        //     font-size: 3rem;
-        //     line-height: 3rem;
-        //     color: white;
-        // }
 
         &-link {
             color: black;
@@ -63,9 +49,10 @@
 
 
     &__slogan {
-        font-size: 0.8rem;
-        padding: 0.5rem 0;
-        text-transform: uppercase;
+        font-size: 2.5rem;
+        padding: 3rem 0;
+        font-family: 'Reenie Beanie', cursive;
+        // text-transform: uppercase;
 
 
     }
