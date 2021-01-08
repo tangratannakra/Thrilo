@@ -4,7 +4,7 @@ const cta = document.getElementById('cta');
 cta.addEventListener('click', scrollContent );
 
 window.onload = function(){
-    setTimeout(() => scrollContent(), 5000);
+    setTimeout(() => scrollContent(), 4000);
 }
 
 
