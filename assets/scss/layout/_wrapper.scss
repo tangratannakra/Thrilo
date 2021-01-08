@@ -1,6 +1,17 @@
 .wrapper {
     min-height: 20rem;
     max-width: 85vw;
-    background-color: var(--color-grey-light-2);
-    box-shadow: var(--drop-shadow-dark);
+    // background-color: var(--color-grey-light-2);
+    
+    margin: 0px auto;
+    display: block;
+}
+
+.background {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
 }
