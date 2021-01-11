@@ -167,7 +167,6 @@ svg {
 
 .intro__logo {
   margin-top: 25vh;
-  background-color: var(--color-grey-light-3);
   padding: 1.5rem;
   position: relative;
 }
@@ -203,8 +202,10 @@ svg {
 
 .intro__slogan {
   font-size: 2.5rem;
-  padding: 3rem 0;
+  padding: 2.5rem 2rem;
   font-family: 'Reenie Beanie', cursive;
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.5), transparent);
+  margin-top: 1vh;
 }
 
 .intro__button {
