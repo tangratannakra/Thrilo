@@ -494,15 +494,11 @@ svg {
   background-color: black;
 }
 
-.side-nav__item--current:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 3px;
-  height: 100%;
-  background-color: var(--color-primary);
+.side-nav__item--current {
   width: 100%;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  background-color: var(--color-primary);
 }
 
 .side-nav__link {

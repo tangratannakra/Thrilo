@@ -34,20 +34,9 @@ margin-top: 2rem;
     }
 
     &__item--current {
-        
-        &:before {
-            content:"";
-            position: absolute;
-            top:0;
-            left:0;
-            width: 3px;
-            height: 100%; 
-            background-color: var(--color-primary);
-        
-            width: 100%;
-    
-        }
-
+        width: 100%;
+        transform: scaleY(1);
+        background-color: var(--color-primary);
     }
 
     &__link {
