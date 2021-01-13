@@ -551,6 +551,9 @@ svg {
 .gallery__image {
   width: 100%;
   display: block;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .gallery__video {
