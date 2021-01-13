@@ -29,6 +29,10 @@
         margin-bottom: 0rem; 
     }
 
+    .side-nav__item--current {
+        width: unset; 
+    }
+
     .header-container {
         flex-wrap: wrap;
         height: unset;

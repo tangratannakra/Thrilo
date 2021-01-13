@@ -975,6 +975,9 @@ svg {
   .side-nav__item:not(:last-child) {
     margin-bottom: 0rem;
   }
+  .side-nav__item--current {
+    width: unset;
+  }
   .header-container {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
